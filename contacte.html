@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacte</title>
+    <title>Contacte - Dubtes d'Educació Física</title>
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -44,25 +44,44 @@
         footer p {
             margin: 0;
         }
-        h2 {
+        .contact-form {
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact-form h2 {
             color: #4caf50;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
         }
-        form input[type="text"], form input[type="email"], form textarea {
+        .contact-form label {
+            display: block;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+        .contact-form input, .contact-form textarea {
             width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-            border: 1px solid #ccc;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
         }
-        form input[type="submit"] {
+        .contact-form button {
             background-color: #4caf50;
             color: white;
-            padding: 15px 20px;
+            padding: 14px 20px;
             border: none;
-            border-radius: 5px;
+            border-radius: 4px;
+            font-size: 1rem;
             cursor: pointer;
+            width: 100%;
         }
-        form input[type="submit"]:hover {
+        .contact-form button:hover {
             background-color: #45a049;
         }
     </style>
@@ -70,7 +89,7 @@
 <body>
 
     <header>
-        <h1>Contacte</h1>
+        <h1>Contacte - Dubtes d'Educació Física</h1>
     </header>
 
     <nav>
@@ -85,17 +104,25 @@
     </nav>
 
     <div class="content">
-        <h2>Posa't en contacte amb nosaltres!</h2>
-        <p>Si tens alguna pregunta o vols més informació sobre les activitats d'educació física, no dubtis a contactar-nos.</p>
-        <form action="mailto:educaciofisica@escola.com" method="post" enctype="text/plain">
-            <label for="name">Nom:</label>
-            <input type="text" id="name" name="name" required><br>
-            <label for="email">Correu electrònic:</label>
-            <input type="email" id="email" name="email" required><br>
-            <label for="message">Missatge:</label><br>
-            <textarea id="message" name="message" rows="4" required></textarea><br><br>
-            <input type="submit" value="Enviar">
-        </form>
+        <h2>Si tens algun dubte, envia'ns el teu missatge!</h2>
+        <p>Si tens preguntes sobre l'educació física, les activitats o qualsevol altre tema relacionat, escriu-nos el teu dubte i et respondrem el més aviat possible!</p>
+
+        <!-- Formulari de dubtes -->
+        <div class="contact-form">
+            <h2>Formulari de Dubtes</h2>
+            <form action="submit_dubtes.php" method="POST">
+                <label for="name">Nom:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correu electrònic:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Quin és el teu dubte?</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Enviar dubte</button>
+            </form>
+        </div>
     </div>
 
     <footer>

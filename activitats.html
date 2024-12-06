@@ -48,15 +48,42 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 20px;
+            margin-top: 40px;
         }
         .activity-item {
             background-color: #fff;
             padding: 20px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .activity-item:hover {
+            transform: translateY(-10px);
+        }
+        .activity-item h3 {
+            color: #4caf50;
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+        }
+        .activity-item p {
+            font-size: 1rem;
+            line-height: 1.5;
         }
         h2 {
             color: #4caf50;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        @media (max-width: 768px) {
+            .activity-list {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width: 480px) {
+            .activity-list {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -79,19 +106,19 @@
 
     <div class="content">
         <h2>Activitats recomanades</h2>
-        <p>Aquí trobaràs activitats adaptades a nens de 5è i 6è de primària per millorar la seva forma física i desenvolupar habilitats físiques essencials.</p>
+        <p>Aquesta secció inclou activitats dissenyades per millorar la forma física dels nens de 5è i 6è de primària. Aquestes activitats ajuden a desenvolupar habilitats físiques essencials com la coordinació, l'agilitat, la força i la flexibilitat.</p>
         <div class="activity-list">
             <div class="activity-item">
                 <h3>Jocs en equip</h3>
-                <p>Activitats com el futbol, el bàsquet o el voleibol per fomentar la cooperació i el treball en equip.</p>
+                <p>Els jocs en equip com el futbol, el bàsquet i el voleibol ajuden a desenvolupar habilitats socials i de cooperació. A més, els nens milloren les seves habilitats físiques com la coordinació motriu i la capacitat de treballar en equip.</p>
             </div>
             <div class="activity-item">
                 <h3>Curses d'obstacles</h3>
-                <p>Curses divertides que ajuden a millorar la coordinació, l'agilitat i la resistència física.</p>
+                <p>Les curses d'obstacles són una activitat divertida que permet als nens treballar la seva agilitat, resistència i velocitat. A més, poden desenvolupar la seva capacitat per superar reptes físics i millorar el control corporal.</p>
             </div>
             <div class="activity-item">
                 <h3>Estiraments i ioga</h3>
-                <p>Exercicis per millorar la flexibilitat, la relaxació i el control corporal.</p>
+                <p>Aquests exercicis ajuden a millorar la flexibilitat i a reduir el risc d'injuries. El ioga també afavoreix la relaxació mental, millorant la concentració i el control corporal, essencial per al benestar general dels nens.</p>
             </div>
         </div>
     </div>
