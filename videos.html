@@ -48,21 +48,47 @@
             color: #4caf50;
         }
         .video-gallery {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            display: flex;
             gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
         }
         .video-item {
             background-color: #fff;
-            padding: 20px;
+            padding: 10px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             text-align: center;
+            width: 560px; /* Mida fixa per a tots els vídeos */
+            position: relative;
         }
         .video-item iframe {
             width: 100%;
-            height: 200px;
+            height: 315px; /* Altura fixa per a tots els vídeos */
             border-radius: 8px;
+        }
+        .video-item h3 {
+            font-size: 1.5rem;
+            color: #4caf50;
+            margin: 10px 0;
+        }
+
+        /* Responsivitat per a pantalles més petites */
+        @media (max-width: 768px) {
+            .video-gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .video-item {
+                width: 90%; /* Ample més petit en dispositius mòbils */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .video-item {
+                width: 95%; /* Més petit encara en pantalles molt petites */
+            }
         }
     </style>
 </head>
@@ -87,16 +113,22 @@
         <p>Aquí trobaràs una selecció de vídeos d'activitats físiques i consells per a nens i nenes de 5è i 6è de primària. Clica sobre els vídeos per veure'n més.</p>
 
         <div class="video-gallery">
-            <!-- Vídeo incrustat des de YouTube -->
+            <!-- Primer vídeo -->
             <div class="video-item">
                 <h3>Estiraments</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/A89Tv_aOTs4?si=bH7wqbJ0e7uxn5Sg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/A89Tv_aOTs4?si=bH7wqbJ0e7uxn5Sg" title="Estiraments" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <!-- Segon vídeo -->
+            <div class="video-item">
+                <h3>Estiraments Part 2</h3>
+                <iframe src="https://www.youtube.com/embed/XHFB6WYQYiY?si=XNWLpwkkBGLlaMQv" title="Estiraments Part 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 Educació Física per a Infants | Tots els drets reservats</p>
+        <p>&copy; 2024  Atletes en acció | Tots els drets reservats</p>
     </footer>
 
 </body>
