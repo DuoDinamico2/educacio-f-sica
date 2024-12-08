@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atletes en accio</title>
+    <title>Atletes en Acció</title>
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -22,18 +22,23 @@
             background-color: #333;
             overflow: hidden;
         }
+
         nav a {
             color: white;
             padding: 16px 20px;
             text-decoration: none;
             float: left;
+            font-weight: 500;
+            text-transform: uppercase;
         }
+
         nav a:hover {
             background-color: #ddd;
             color: black;
         }
         .content {
             margin: 40px;
+            text-align: center;
         }
         .slider {
             position: relative;
@@ -56,9 +61,20 @@
         }
         .section-title {
             color: #4caf50;
-            text-align: center;
-            font-size: 2rem;
+            font-size: 2.5rem;
             margin-bottom: 20px;
+        }
+        .cta-button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #45a049;
         }
         footer {
             background-color: #333;
@@ -74,17 +90,18 @@
 <body>
 
     <header>
-        <h1>Atletes en acció</h1>
+        <h1>Atletes en Acció</h1>
+        <p>Fomentem la salut física i emocional dels infants a través de l'activitat física</p>
     </header>
 
     <nav>
         <a href="index.html">Inici</a>
         <a href="beneficis.html">Beneficis</a>
         <a href="activitats.html">Activitats</a>
-        <a href="contacte.html">Contacte</a>
         <a href="videos.html">Vídeos</a>
         <a href="recursos.html">Recursos</a>
         <a href="joc.html">Joc interactiu</a>
+        <a href="contacte.html">Contacte</a>
     </nav>
 
     <!-- Slider de imatges -->
@@ -95,39 +112,19 @@
     </div>
 
     <div class="content">
-        <h2 class="section-title">Benvinguts a l'Educació Física per a Infants!</h2>
-        <p>En aquest espai trobareu una plataforma dedicada a millorar la salut física i emocional dels infants, oferint activitats entretingudes i educatives per a nens de 5è i 6è de primària. El nostre objectiu és fomentar la importància de l'activitat física, la cooperació, i el benestar a través de jocs i exercicis dissenyats per a un aprenentatge actiu i saludable.</p>
+        <h2 class="section-title">Benvinguts a la Plataforma Atletes en Acció</h2>
+        <p>En aquest espai trobaràs recursos educatius i activitats dissenyades per a nens de 5è i 6è de primària, amb l'objectiu de millorar la seva salut física i emocional mitjançant l'activitat física divertida i educativa.</p>
 
-        <h3>Beneficis de l'Educació Física</h3>
-        <p>L'educació física és essencial per al desenvolupament integral dels nens, ajudant a potenciar la seva salut física i emocional. La pràctica regular d'activitats físiques aporta nombrosos beneficis, entre els quals destaquen:</p>
-        <ul>
-            <li><strong>Millora de la salut física:</strong> L'activitat física ajuda a prevenir malalties, a mantenir un pes saludable i a millorar la resistència física.</li>
-            <li><strong>Desenvolupament de la coordinació motriu:</strong> Jocs com el futbol o el bàsquet milloren la coordinació entre els diferents moviments corporals i la percepció espacial.</li>
-            <li><strong>Augment de la concentració:</strong> La pràctica regular d'exercicis activa la ment, augmentant la concentració i la capacitat d'atenció en tasques acadèmiques.</li>
-            <li><strong>Afavoriment de la socialització:</strong> Els jocs en grup fomenten el treball en equip, el respecte i la cooperació entre els nens.</li>
-        </ul>
-
-        <h3>Activitats Recomanades</h3>
-        <p>Per aconseguir una educació física completa i divertida, us proposem una sèrie d'activitats que combinen esport, coordinació i treball en equip:</p>
-        <ul>
-            <li><strong>Jocs d'equip:</strong> Activitats com el futbol, el bàsquet i el vòlei, dissenyades per fomentar la cooperació i el treball en equip, alhora que milloren la condició física general.</li>
-            <li><strong>Exercicis d'agilitat i velocitat:</strong> Curses d'obstacles i jocs dinàmics per desenvolupar la rapidesa i la coordinació, ideals per a millorar la motricitat fina i gruixuda dels infants.</li>
-            <li><strong>Ioga i estiraments:</strong> Sessió de relaxació que inclou tècniques de respiració i estiraments per augmentar la flexibilitat, reduir l'estrès i prevenir lesions.</li>
-            <li><strong>Jocs a l'aire lliure:</strong> Activitats en la natura com el senderisme o els circuits d’aventura, que estimulen la creativitat i l'activitat física en un entorn natural.</li>
-        </ul>
-
-        <h3>Consells per a una Vida Activa</h3>
-        <p>Per mantenir-se actiu i saludable, és important establir una rutina diària d'exercici. Aquí teniu alguns consells per incorporar l'activitat física a la vostra vida quotidiana:</p>
-        <ul>
-            <li><strong>Comença lentament:</strong> Si no estàs acostumat a fer exercici, comença amb activitats lleugeres com caminar o córrer a poc a poc.</li>
-            <li><strong>Estableix metes realistes:</strong> Defineix objectius clars i assolibles, com caminar 30 minuts al dia o participar en activitats en grup cada setmana.</li>
-            <li><strong>Practica en grup:</strong> Fer esport amb amics o familiars és més divertit i motiva a seguir practicant de manera regular.</li>
-        </ul>
-
+        <p><strong>Explora les nostres seccions:</strong></p>
+        <div>
+            <a href="beneficis.html" class="cta-button">Descobreix els Beneficis</a>
+            <a href="activitats.html" class="cta-button">Veure Activitats</a>
+            <a href="joc.html" class="cta-button">Prova el Joc Interactiu</a>
+        </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 Atletes en acció | Tots els drets reservats</p>
+        <p>&copy; 2024 Atletes en Acció | Tots els drets reservats</p>
     </footer>
 
 </body>
